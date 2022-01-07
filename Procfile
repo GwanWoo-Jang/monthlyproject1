@@ -1,1 +1,1 @@
-web: gunicorn monthylyproject1.wsgi --log-file -
+web: gunicorn monthlyproject1.wsgi --log-file -
