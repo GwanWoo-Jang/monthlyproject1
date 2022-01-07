@@ -1,14 +1,100 @@
+{% load static %}
 <!DOCTYPE html>
-<html>
+<html lang="ko">
     <head>
-        <title>
-            Monthly_Project1
-        </title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Scrolling Nav - Start Bootstrap Template</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
     </head>
-    <body>
-        <h1>Monthly1 Project</h1>
-        <iframe width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~GwanWoo-Jang/5.embed"></iframe>
-        <iframe width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~GwanWoo-Jang/3.embed"></iframe>
-        <iframe width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~GwanWoo-Jang/1.embed"></iframe>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+            <div class="container px-4">
+                <a class="navbar-brand" href="#page-top">Monthly Project1</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#EDA1">EDA1</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#EDA2">EDA2</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#EDA3">EDA3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="bg-primary bg-gradient text-white">
+            <div class="container px-4 text-center">
+                <h1 class="fw-bolder">EDA 시각화 프로젝트</h1>
+                <h3 class="fw-bolder">문제 정의</h2>
+                <p class="lead">지난 과제를 진행하면서 EDA를 멋지게 진행한 우리의 과제를 친구들에게 보여주고 싶은 상황,</p>
+                <p class="lead">그런데 친구들의 반응이 시원찮은 것 같네요...?</p>
+                <p class="lead">🤦‍♀️ : Notebook을 보면 된다고? 내 그램 노트북 말하는거야?</p>
+                <p class="lead">🤦‍♂️ : Git을 통해 열람하라고? 나는 깃이라곤 새의 날개깃밖에 몰라...</p>
+                <p class="lead">이쪽 분야에 문외한 친구들은 이를 어떻게 열람하는지도 몰라서 끙끙 앓고 있는 것 같네요 😭</p>
+                <p class="lead">어디서든 여러분이 멋지게 분석한 결과를 보여줄 수 있는 웹 페이지를 만들어봅시다!</p>
+                <a class="btn btn-lg btn-light" href="#EDA1">Start!</a>
+            </div>
+        </header>
+        <!-- About section-->
+        <section id="EDA1">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2>가장 비싼 라면은 무엇일까?</h2>
+                        <p class="lead">과제를 하느라 지친 나에게 자그만한 선물을 주고싶은 나 가장 비싼 라면을 자신에게 선물 해주려고 합니다.</p>
+                        <iframe width="700" height="500" frameborder="0" scrolling="no" src="//plotly.com/~GwanWoo-Jang/5.embed"></iframe>
+                        <ul>
+                            <li>생생우동이 1800원으로 가장 비싸게 책정되있음을 볼 수 있습니다.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services section-->
+        <section class="bg-light" id="EDA2">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2>각 회사의 대표 라면의 가격 변동은 어떻게 될까?</h2>
+                        <p class="lead">우리 나라의 라면 회사들의 대표 라면, 삼양하면 삼양라면, 농심하면 신라면과 같은 대표라면들의 가격 변동은 어떻게 될지 궁금하였습니다. 대표 라면의 선정은 가장 오래전부터 시작된 라면이 근본의 라면이라 생각하여 기준을 잡았습니다.</p>
+                        <iframe width="700" height="500" frameborder="0" scrolling="no" src="//plotly.com/~GwanWoo-Jang/3.embed"></iframe>
+                        <ul>
+                            <li>처음에는 모두 동일하게 시작 되었으나 농심의 신라면이 가장 많이 올랐음을 볼수 있었습니다.</li>
+                            <li>오뚜기의 진라면은 가장 낮게 그리고 그 가격대를 유지하고 있었습니다.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact section-->
+        <section id="EDA3">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2>"라면"이라고 이름붙은 라면과 그렇지않은 라면의 가격은 어떤차이가 있을까?</h2>
+                        <p class="lead">수많은 라면 제품들이 있는데, 그 중 "라면"이라고 이름붙은 라면(신라면, 진라면, 삼양라면)들이 있고, "라면"이라고 붙지 않은 라면(안성탕면, 너구리, 불닭볶음면)이 있는데, 이들의 평균적인 가격의 형성이 어떻게 되있는지 궁금하였습니다.</p>
+                    <iframe width="700" height="500" frameborder="0" scrolling="no" src="//plotly.com/~GwanWoo-Jang/1.embed"></iframe>
+                    <ul>
+                            <li>데이터의 부족으로.. Nan이 많아서 정확하게 측정할수는 없었지만, 라면이 붙은 제품들이 가격이 전체적으로 낮음을 볼수 있었습니다.</li>
+                        </ul>    
+                    
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container px-4"><p class="m-0 text-center text-white">Copyright &copy; 장관우의 첫번째 웹사이트(어..이런것도 붙여야하나?)</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{% static 'js/scripts.js'%}"></script>
+
     </body>
 </html>

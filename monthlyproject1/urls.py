@@ -16,6 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from EDA.views import eda_views
+from django.conf.urls.static import static
+
 
 urlpatterns = [
     path('',eda_views),
