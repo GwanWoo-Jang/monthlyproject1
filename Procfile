@@ -1,1 +1,1 @@
-web: gunicorn montylyproject1.wsgi --log-file -
+web: gunicorn monthylyproject1.wsgi --log-file -
